@@ -3,11 +3,11 @@ import ReleasePlugin._
 
 sbtPlugin := true
 
-name := "$name_prefix$$org$"
+name := "$name$"
 
 description := "Version of sbt-statika plugin for $org$"
 
-homepage := Some(url("https://github.com/$org$/$name_prefix$$org$"))
+homepage := Some(url("https://github.com/$org$/$name$"))
 
 organization := "$org$"
 
@@ -26,7 +26,7 @@ publishTo <<= (isSnapshot, s3credentials) {
   val prefix = if (snapshot) "snapshots" else "releases"
   credentials map S3Resolver(
       prefix+" S3 publishing bucket"
-    , "s3://"+prefix+"$publishing_suffix$"
+    , "s3://"+prefix+"era7.com"
     , Resolver.ivyStylePatterns
     ).toSbtResolver
 }
