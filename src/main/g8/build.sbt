@@ -41,9 +41,9 @@ resolvers ++= Seq (
 //, Resolver.url("Era7 ivy snapshots", url("http://snapshots.era7.com.s3.amazonaws.com"))(Resolver.ivyStylePatterns)
   )
 
-addSbtPlugin("ohnosequences" % "sbt-s3-resolver" % "0.5.1")
+addSbtPlugin("ohnosequences" % "sbt-s3-resolver" % "0.5.2")
 
-addSbtPlugin("ohnosequences" % "sbt-statika" % "0.6.0")
+addSbtPlugin("ohnosequences" % "sbt-statika" % "0.6.1")
 
 
 // sbt-release settings
