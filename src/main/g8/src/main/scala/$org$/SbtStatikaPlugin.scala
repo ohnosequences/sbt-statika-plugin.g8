@@ -16,7 +16,9 @@ object SbtStatikaOhnosequences extends Plugin with SbtStatikaPlugin {
       organization := "$org$"
     , organizationHomepage := Some(url("http://$org$.com"))
 
-    , statikaVersion := "0.12.2"
+    , statikaVersion := "0.13.0"
+
+    , instanceProfileARN := Some("arn:aws:iam::857948138625:instance-profile/statika-private-resolver")
 
     , publicResolvers := Seq(
         "Statika public maven releases" at toHttp("s3://releases."+suffix)

@@ -43,7 +43,7 @@ resolvers ++= Seq (
 
 addSbtPlugin("ohnosequences" % "sbt-s3-resolver" % "0.5.2")
 
-addSbtPlugin("ohnosequences" % "sbt-statika" % "0.6.1")
+addSbtPlugin("ohnosequences" % "sbt-statika" % "0.7.0")
 
 
 // sbt-release settings
