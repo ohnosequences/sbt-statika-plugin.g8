@@ -3,7 +3,7 @@ import Keys._
 
 import SbtS3Resolver._
 
-object SbtStatikaOhnosequences extends Plugin with SbtStatikaPlugin {
+object SbtStatika$org;format="Camel"$ extends Plugin with SbtStatikaPlugin {
 
   // just some local aliases
   private val mvn = Resolver.mavenStylePatterns
